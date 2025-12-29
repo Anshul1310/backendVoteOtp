@@ -43,14 +43,14 @@ app.post('/send-otp', async (req, res) => {
     try {
         // --- CALL TEXT BEE API ---
         const response = await axios.post(
-            `https://api.textbee.dev/api/v1/gateway/devices/69500df29c1d25bf8da85b57/send-sms`,
+            `https://api.textbee.dev/api/v1/gateway/devices/69529e1b8a8761ab1a3ba7fb/send-sms`,
             {
                 recipients: [ userPhone ],
                 message: `Your Voting OTP is: ${otp}.`
             },
             {
                 headers: {
-                    'x-api-key': "7b29a2e6-9957-4700-b719-5265ee443eae"
+                    'x-api-key': "c9f987e7-3144-45d6-a87b-0d91bee96ba0"
                 }
             }
         );
